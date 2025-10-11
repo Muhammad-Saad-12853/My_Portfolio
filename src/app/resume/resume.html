@@ -1,0 +1,122 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+        <accordion-group [(isOpen)]="isWorkExperienceOpen">
+            <button class="btn btn-block justify-content-between d-flex w-100 " accordion-heading>
+                <div style="visibility: hidden;">></div>
+                <div class="btn-link">Work Experience</div>
+                <div style="width: 10.95px;">
+                <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                </div>
+            </button>
+            <div style="text-align: left;">   
+                <h2 class="mb-0">FrontEnd Web Dev Intern</h2>
+            <h3 class="text-primary">SMSAMI</h3>
+                <p>I gained valuable hands-on experience with JavaScript, Angular, version control systems like Git, and working with APIs. This practical exposure significantly enhanced my development skills and understanding of modern web technologies. </p>
+            </div>
+            </accordion-group>           
+        <accordion-group [(isOpen)]="isEducationOpen">
+        
+            <button class="btn btn-block justify-content-between d-flex w-100 " accordion-heading>
+                <div style="visibility: hidden;">></div>
+                <div class="btn-link">Education</div>
+                <div style="width: 10.95px;">
+                <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                </div>
+            </button>
+
+
+            <div style="text-align: left;">
+                <h2 class="mb-0">Bachelor's of Science in Computer Science</h2>
+                <h3 class="text-primary">City University of Science and Information Technology, Peshawar</h3>
+                <p>
+                    Completed Bachelor of Science in Computer Science in 2025, gaining comprehensive knowledge in software engineering, algorithms, and advanced programming concepts. Developed expertise in data structures, database systems, and software development methodologies through rigorous academic curriculum and practical projects.
+                </p>
+            </div>
+            <div style="text-align: left;">
+                <h2 class="mb-0">FCS</h2>
+                <h3 class="text-primary">Government College, Peshawar</h3>
+                <p>Completed Faculty of Computer Science (FCS) from Government College Peshawar in 2021 with distinction, achieving an A grade. Developed strong analytical and problem-solving skills while mastering core computer science concepts including programming fundamentals, data structures, and algorithms.</p>
+            </div>
+
+              <div style="text-align: left;">
+                <h2 class="mb-0">Matric</h2>
+                <h3 class="text-primary">GSOZCMHSS NO 2,Peshawar</h3>
+                <p>Completed Matriculation in Science in 2019 with exceptional academic performance, achieving an A+ grade. Built strong foundation in mathematics, physics, and chemistry while developing critical thinking and analytical skills essential for technical studies.</p>
+            </div>
+        </accordion-group>
+
+
+        <accordion-group [(isOpen)]="isCertificationOpen">
+  
+            <button class="btn btn-block justify-content-between d-flex w-100 " accordion-heading>
+                <div style="visibility: hidden;">></div>
+                <div class="btn-link">Certifications</div>
+                <div style="width: 10.95px;">
+                <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+                <div *ngIf="isCertificationOpen" style="color: white;">v</div>
+                </div>
+            </button>
+  
+            <div style="text-align: left;">
+                <h2 class="mb-0">Diploma In Information Technology</h2>
+                <h3 class="text-primary">KPBTE – Khyber Pakhtunkhwa Board of Technical Education</h3>
+                <p>
+                   Completed Diploma in Information Technology (DIT) in 2020, building foundational knowledge in computer systems, programming, and IT infrastructure. Acquired practical skills in software development, database management, and network administration through comprehensive coursework and hands-on projects.
+                </p>
+            </div>
+            <div style="text-align: left;">
+                <h2 class="mb-0">Cyber Security Training Workshop</h2>
+                <h3 class="text-primary">Next Gennect</h3>
+                <p>Attended a comprehensive cybersecurity workshop organized by Next GenNect in 2025, gaining insights into current security threats and defensive strategies. Enhanced knowledge of cybersecurity best practices, threat detection methodologies, and industry-standard security protocols.</p>
+            </div>
+            <div style="text-align: left;">
+                <h2 class="mb-0">Artificial Intellegence Workshop</h2>
+                <h3 class="text-primary">Next Gennect</h3>
+                <p>Participated in an Artificial Intelligence workshop conducted by Next GenNect in 2025, exploring machine learning fundamentals and AI implementation strategies. Developed understanding of AI technologies, neural networks, and practical applications of artificial intelligence in modern software development.</p>
+            </div>
+        </accordion-group>
+
+
+        <accordion-group [(isOpen)]="isskillsOpen">
+            <button class="btn btn-block justify-content-between d-flex w-100 " accordion-heading>
+                <div style="visibility: hidden;">></div>
+                <div class="btn-link">Skills</div>
+                <div style="width: 10.95px;">
+                <div *ngIf="!isskillsOpen" style="color: white;">></div>
+                <div *ngIf="isskillsOpen" style="color: white;">v</div>
+                </div>
+            </button>
+        
+        
+        
+        
+        
+            <div class="row" style="text-align: left;">
+                <div class="col">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Html CSS</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>FrameWorks</h3>
+                    <ul>
+                        <li>Angular</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+            </div>
+        </accordion-group>
+        
+    </accordion>
+    </div>
+    
+</div>
